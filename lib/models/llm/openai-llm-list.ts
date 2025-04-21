@@ -90,4 +90,4 @@ const models: LLM[] = [
   },
 ];
 
-export default models;
+export const OPENAI_LLM_LIST = models;
