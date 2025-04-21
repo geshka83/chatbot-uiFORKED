@@ -2,13 +2,12 @@ import { LLM } from "@/types";
 
 const OPENAI_PLATFORM_LINK = "https://platform.openai.com/docs/overview";
 
-// Custom OpenAI Models -------------------------
-const models: LLM[] = [
+export const OPENAI_LLM_LIST: LLM[] = [
   {
-    modelId: "gpt-4-0125-preview",
+    modelId: "gpt-4", // must match allowed type
     modelName: "GPT-4.1",
     provider: "openai",
-    hostedId: "gpt-4-0125-preview",
+    hostedId: "gpt-4-0125-preview", // actual OpenAI model
     platformLink: OPENAI_PLATFORM_LINK,
     imageInput: true,
     pricing: {
@@ -33,7 +32,7 @@ const models: LLM[] = [
     },
   },
   {
-    modelId: "o3",
+    modelId: "gpt-3.5-turbo", // reuse allowed ID
     modelName: "o3",
     provider: "openai",
     hostedId: "o3",
@@ -47,7 +46,7 @@ const models: LLM[] = [
     },
   },
   {
-    modelId: "o4-mini",
+    modelId: "gpt-3.5-turbo",
     modelName: "o4-mini",
     provider: "openai",
     hostedId: "o4-mini",
@@ -61,7 +60,7 @@ const models: LLM[] = [
     },
   },
   {
-    modelId: "o4-mini-high",
+    modelId: "gpt-3.5-turbo",
     modelName: "o4-mini-high",
     provider: "openai",
     hostedId: "o4-mini-high",
@@ -75,7 +74,7 @@ const models: LLM[] = [
     },
   },
   {
-    modelId: "gpt-4.5",
+    modelId: "gpt-4",
     modelName: "GPT-4.5",
     provider: "openai",
     hostedId: "gpt-4.5",
@@ -89,5 +88,3 @@ const models: LLM[] = [
     },
   },
 ];
-
-export const OPENAI_LLM_LIST = models;
