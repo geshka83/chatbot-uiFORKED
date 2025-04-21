@@ -8,7 +8,7 @@ The open-source AI chat app for everyone.
 
 View the latest demo [here](https://x.com/mckaywrigley/status/1738273242283151777?s=20).
 
-## Updates
+## Updatesff
 
 Hey everyone! I've heard your feedback and am working hard on a big update.
 
